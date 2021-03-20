@@ -11,8 +11,8 @@ pipeline {
     }
 
     tools {
-        Jdk 'jdk 1.8.0_282'
         Maven 'maven 3.6.3'
+        Jdk 'jdk 1.8.0_282'
         DockerTool 'docker-19.03.8'
     }
 
