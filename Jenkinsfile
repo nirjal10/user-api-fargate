@@ -13,13 +13,13 @@ pipeline {
     tools {
         jdk 'openjdk-11'
         maven 'maven 3.6.3'
-        dockerTool 'docker-latest'
+        dockerTool 'docker-19.03.8'
     }
 
     environment {
         POM_VERSION = getVersion()
         JAR_NAME = getJarName()
-        AWS_ECR_REGION = 'eu-west-1'
+        AWS_ECR_REGION = 'us-east-1'
         AWS_ECS_SERVICE = 'ch-dev-user-api-service'
         AWS_ECS_TASK_DEFINITION = 'ch-dev-user-api-taskdefinition'
         AWS_ECS_COMPATIBILITY = 'FARGATE'
